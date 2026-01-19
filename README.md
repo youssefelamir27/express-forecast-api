@@ -19,18 +19,9 @@ Geographic coordinates (latitude & longitude)
 Location details
 
 🛠️ Built With
-
-Backend: Node.js, Express.js
-
-
-Frontend: Vanilla JavaScript, HTML5, CSS3
-
-Template Engine: Handlebars (HBS)
-
-Weather API: WeatherAPI.com
-
-
-Icons: Font Awesome
+<div align="center">
+CategoryTechnologiesBackendNode.js, Express.jsFrontendVanilla JavaScript, HTML5, CSS3Template EngineHandlebars (HBS)Weather APIWeatherAPI.comIconsFont Awesome
+</div>
 
 📋 Prerequisites
 Make sure you have the following installed:
