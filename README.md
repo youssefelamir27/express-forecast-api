@@ -5,6 +5,8 @@ A sleek real-time weather application that provides instant weather information 
 ![Weather App](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+<img width="1734" height="868" alt="image" src="https://github.com/user-attachments/assets/bded280c-1fd9-44e5-b944-063354df2db9" />
+
 
 ## 🌟 Features
 
