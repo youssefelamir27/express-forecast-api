@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/sunny-blue-sky-stockcake.jpg");
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     background-color: rgba(0, 0, 0, 0.2);
+     padding: 10px;
+    /* border: 3px solid red; */
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+i{
+    font-size: 25px;
+    color: white;
+}
+.title {
+   
+    /* border: 3px solid/ violet; */
+    display: flex;
+    align-items: center; 
+    gap: 0px 20px;
+    /* width: 350px; */
+    justify-content: center; 
+}
+
+.title h2 {
+    color: white; 
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic; 
+}
+.title i {
+    font-size: 30px;
+    color: white;
+}
+p{
+    font-size: 20px;
+    padding: 0 10px;
+    background-color: rgba(0, 55, 255,0.2);
+    padding: 5px;
+    min-width: 20px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
+p i{
+    font-size: 20px;
+}
+[type="text"]{
+    padding: 5px;
+    height: 23px;
+    width: 200px;
+    border-radius: 20px;
+}
+[type="submit"]{
+    width: 100px;
+    padding: 5px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}

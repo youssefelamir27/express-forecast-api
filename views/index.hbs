@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="overlay">
+              <div class="child">
+                <div class="title">
+            <i class="fas fa-cloud"></i>
+            <h2>Weather App</h2>
+                </div>
+                <form id="weatherForm" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <input id="searchbtn" type="text" placeholder="Enter your country name" style="margin-bottom: 15px;">
+                <input id="submitbtn" type="submit" value="search">
+                </form>
+                
+           <p id="location"></p>
+           <p id="latitude"></p>
+           <p id="longitude"></p>
+           <p id="temp"></p>
+           <p id="error"></p>
+        </div>
+        </div>
+      
+    </div>
+    <script src="js/script.js"></script>  
+</body>
+</html>
