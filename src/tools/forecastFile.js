@@ -32,6 +32,7 @@ const myDisplay=(address,callback)=>{
     else{
     //  callback(undefined,response.body.location.name + " latitude is "+response.body.location.lat+" longitude is "+response.body.location.lon+" temp now is "+response.body.current.temp_c)
      callback(undefined,{
+        cap:response.body.location.name,
         lat:response.body.location.lat,
         long:response.body.location.lon,
         temp:response.body.current.temp_c

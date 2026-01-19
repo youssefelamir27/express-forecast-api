@@ -1,4 +1,185 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/sunny-blue-sky-stockcake.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(2px);
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 40px 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+i {
+    font-size: 25px;
+    color: white;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+.title i {
+    font-size: 36px;
+    color: white;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+p {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    display: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+p:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+p i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+[type="text"] {
+    padding: 12px 20px;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+[type="text"]:focus {
+    border-color: #4a90e2;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 15px rgba(74, 144, 226, 0.4);
+}
+
+[type="text"]::placeholder {
+    color: #888;
+}
+
+[type="submit"] {
+    width: 140px;
+    padding: 12px;
+    height: auto;
+    background: linear-gradient(135deg, #4a90e2, #357abd);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+[type="submit"]:hover {
+    background: linear-gradient(135deg, #357abd, #2868a8);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+[type="submit"]:active {
+    transform: translateY(0);
+}
+
+#error {
+    background: rgba(255, 59, 48, 0.3);
+    border: 1px solid rgba(255, 59, 48, 0.5);
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .child {
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .title h2 {
+        font-size: 28px;
+    }
+
+    .title i {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+
+    [type="text"],
+    [type="submit"] {
+        font-size: 14px;
+    }
+}
+/* body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +206,6 @@ body{
     transform: translate(-50%,-50%);
      background-color: rgba(0, 0, 0, 0.2);
      padding: 10px;
-    /* border: 3px solid red; */
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -39,11 +219,9 @@ i{
 }
 .title {
    
-    /* border: 3px solid/ violet; */
     display: flex;
     align-items: center; 
     gap: 0px 20px;
-    /* width: 350px; */
     justify-content: center; 
 }
 
@@ -83,4 +261,4 @@ p i{
     background-color: blue;
     color: white;
     border-radius: 10px;
-}
+} */

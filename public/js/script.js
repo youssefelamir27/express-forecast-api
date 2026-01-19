@@ -10,6 +10,7 @@ weatherForm.addEventListener("submit",(e)=>{
 })
 const p=document.getElementsByTagName("p")
 const locationf=document.getElementById("location")
+const capitalf=document.getElementById("capital")
 const latitude=document.getElementById("latitude")
 const longitude=document.getElementById("longitude")
 const temp=document.getElementById("temp")
@@ -34,6 +35,7 @@ const showWeather=async()=>{
     }
        const address1=dataToObject.address
        locationf.innerHTML = `Country <i class="fas fa-map-pin"></i>: ${capitalizeFirstLetter(address1)}` 
+       capitalf.innerHTML=`Capital <i class="fas fa-building"></i>: ${dataToObject.data.cap}`
        latitude.innerHTML = `Latitude <i class="fas fa-globe"></i>: ${dataToObject.data.lat}`
        longitude.innerHTML = `Longitude <i class="fas fa-globe"></i>: ${dataToObject.data.long}`
        temp.innerHTML = `Temperature <i class="fas fa-thermometer-half"></i>: ${dataToObject.data.temp}`
