@@ -51,30 +51,6 @@ const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${addres
 bashnode src/app.js
 6. Open in browser
 Navigate to http://localhost:3002
-📁 Project Structure
-express-forecast-api/
-│
-├── src/
-│   ├── app.js                    # Main Express server
-│   └── tools/
-│       ├── forecastFile.js       # Weather API integration
-│       └── geocode.js            # Geocoding utilities
-│
-├── public/
-│   ├── css/
-│   │   ├── style.css            # Main styles
-│   │   └── all.css              # Font Awesome
-│   ├── js/
-│   │   └── script.js            # Client-side logic
-│   └── image/
-│       └── sunny-blue-sky-stockcake.jpg
-│
-├── views/
-│   └── index.hbs                # Homepage template
-│
-├── .gitignore
-├── package.json
-└── README.md
 🔌 API Usage
 Weather Endpoint
 Endpoint: GET /weather
