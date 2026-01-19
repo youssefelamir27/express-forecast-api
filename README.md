@@ -21,9 +21,15 @@ Location details
 🛠️ Built With
 
 Backend: Node.js, Express.js
+
+
 Frontend: Vanilla JavaScript, HTML5, CSS3
+
 Template Engine: Handlebars (HBS)
+
 Weather API: WeatherAPI.com
+
+
 Icons: Font Awesome
 
 📋 Prerequisites
